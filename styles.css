@@ -6,17 +6,17 @@ body {width: 100%; padding: 4rem;}
 
 main {width: 70vw; margin: auto;}
 
-#header {width: 100%; height: 50px; display: flex; justify-content: right; align-items: center; position:fixed; top: 0; left: 0; right: 0; bottom: 0; padding: 1.2rem; background-color: #db7093; z-index: 1;}
+#header {width: 100%; height: 6vh; display: flex; justify-content: right; align-items: center; position:fixed; top: 0; left: 0; padding: 0; background-color: #db7093; z-index: 1;}
 
 nav a {text-decoration: none; color: #fff0f5;}
 
-nav>ul {display: flex; justify-content: space-evenly;  flex-wrap: none; height: 100%; padding-inline-start: 1rem; padding-top: 0.9rem; }
+nav>ul {display: flex; justify-content: space-evenly;  flex-wrap: none; height: 100%; padding-inline-start: 1rem; padding-right: 3rem;}
 
-nav>ul>li {list-style-type: none; margin-left: 0.6rem; font-size: 2.6vh; font-weight: bold;}
+nav>ul>li {list-style-type: none; margin-left: 1.6rem; font-size: 200%; font-weight: bold;}
 
 main {margin-top: 4rem; margin-bottom: 2rem;}
 
-h1 {text-align: center; font-size: 2rem;}
+h1 {text-align: center; font-size: 3rem;}
 
 .new-section div {display: flex; justify-content: center; align-items: center; flex-direction: column; padding-bottom: 2rem;}
 
@@ -24,13 +24,13 @@ h1 {text-align: center; font-size: 2rem;}
 
 .slide-wrapper {background-color: #db7093; flex-wrap: wrap; border-radius: 1% 15% 1% 1%;}
 
-.slide-wrapper header {padding-top: 1px; padding-left: 0.5rem; margin-bottom: -1rem; color: #FFF0F5;}
+.slide-wrapper header {padding-top: 1px; padding-left: 0.5rem; margin-bottom: -1rem; color: #FFF0F5; font-size: 1.5rem;}
 
-.slider {display: flex; justify-content: space-evenly; padding: 1rem;}
+.slider {display: flex; justify-content: space-evenly;}
 
 .slide {max-width: 504px; max-height: 283px;}
 
-form {width: 50vw; border-top: 2px solid #404040; margin-left: auto; margin-right: auto;}
+form {width: 50vw; border-top: 2px solid #404040; margin-left: auto; margin-right: auto; font-size: 1.4rem;}
 
 #contact {padding-top: 2rem;}
 
@@ -40,10 +40,10 @@ label {display: block; margin-bottom: 0.5rem;}
 
 input {width: 100%;}
 
-#submit {display: block; margin: 0.5rem auto; width: 20%; border: 1px solid #800000; background-color: #db7093;}
+#submit {display: block; margin: 2.5rem auto; width: 20%; height: 40px; border: 1px solid #800000; background-color: #db7093; font-weight: bold; font-size: 20px; color: #FFF0F5;}
 
-@media (max-width:420px) {nav>ul>li {font-size: 0.4rem; margin-left: 0.4rem;} .slide {max-width: 336px; max-height: 190px;} .profil-photo {width: 60px; height: 60px;} h1 {font-size: 1rem;}}
+@media (max-width:750px) {main {width: 85vw; margin: 20% 0% 0% 0%;} body{width: 100vw; margin-left: auto; margin-right: auto; padding: 2rem;} #header {height: 10vh} nav>ul {display: flex; flex-wrap: wrap;} nav>ul>li {font-size: 1.3rem; margin-left: 0.8rem; line-height: 2rem;} .slide {max-width: 336px; max-height: 190px;} .slide-wrapper header {font-size: 1rem; padding-bottom: 10px;} .slide-wrapper {width: 90vw;} .slider {flex-direction: column; justify-items: center; align-items: center; width: 90vw; margin: 0; padding: 0;}h1 {font-size: 1.4rem; margin-bottom: 2rem;}
+.slide {max-width: 260px; margin-bottom: 1rem;} form {width: 80vw; font-size: 1rem;} #submit {width: 50%; height: 30px;} .new-slide {max-width: 300px;}}
 
-@media (max-width: 768px) {
-    .slider {flex-direction: column; justify-items: center; align-items: center;}
-    .slide {max-width: 100%; margin-bottom: 1rem;}}
+@media (min-width: 751px) and (max-width: 1024px) {main {width: 85vw;} body{width: 100vw; margin: 0; padding: 4rem;} #header {height: 7vh} nav>ul {display: flex; flex-wrap: wrap;} nav>ul>li {font-size: 1.5rem; margin-left: 0.8rem; line-height: 2rem;} .slide {max-width: 100%; height: auto;} .slide-wrapper header {font-size: 1.5rem;} .slide-wrapper {width: 90vw;} .slider {flex-direction: row; flex-wrap:wrap; justify-items: auto; justify-content: space-evenly; width: 90vw; margin: 0; padding: 0;}h1 {font-size: 2rem; margin-bottom: 3rem; margin-top: 0;} 
+.slide {max-width: 300px; height: auto; margin-bottom: 1rem;} form {width: 70vw; font-size: 1rem;} #submit {width: 50%; height: 30px; margin-top: 3rem;} .new-slide {margin-bottom: 2rem;}}
